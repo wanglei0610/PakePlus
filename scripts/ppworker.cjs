@@ -189,6 +189,7 @@ const updateInitRs = (isHtml, startMethod, winState, winConfig) => {
     } else {
         console.log('use winConfig url')
     }
+    console.log('update init.rs winConfig', winConfig)
     // 更新 init.rs
     const newInitRs = initRs
         .replace('{"url": "index.html"}', JSON.stringify(winConfig))
